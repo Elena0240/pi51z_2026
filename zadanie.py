@@ -7,4 +7,7 @@ print("Я изучаю Python.")
 print("Это мой первый код.")
 
 #Задача 3
-print("Ура!, Ура!, Ура!")
+phrase= "Ура!"
+print(phrase)
+print(phrase)
+print(phrase)
