@@ -17,3 +17,8 @@ phrase= "Ура!!!"
 print(phrase)
 print(phrase)
 print(phrase)
+
+#Задача 5
+#Тест 1
+name = input("Введите ваше имя: ")
+print("Привет,", name)
