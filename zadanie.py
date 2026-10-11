@@ -19,6 +19,12 @@ print(phrase)
 print(phrase)
 
 #Задача 5
-#Тест 1
 name = input("Введите ваше имя: ")
 print("Привет,", name)
+
+
+#Задача 6
+#Тест 1
+word1 = input()
+word2 = input()
+print(word1, word2)
