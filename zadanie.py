@@ -24,7 +24,18 @@ print("Привет,", name)
 
 
 #Задача 6
-#Тест 1
-word1 = input()
-word2 = input()
+word1 = input("Введите первое слово: ")
+word2 = input("Введите второе слово")
 print(word1, word2)
+
+#Задача 7
+#Вывод трех фраз на отдельных строках
+name1 = input("Введите первое слово")
+name2 = input("Введите второе слово")
+name3 = input("Введите третье слово")
+
+print(name1)
+print(name2)
+print(name3)
+
+
