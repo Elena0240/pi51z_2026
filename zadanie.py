@@ -38,4 +38,8 @@ print(name1)
 print(name2)
 print(name3)
 
-
+#Задача 8
+name1 = input("Введите имя: ")
+name2 = input("Введите название блюда: ")
+print(name1, "любит", name2, ".")
+#Должно выйти: Петя любит пиццу
