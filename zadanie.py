@@ -52,3 +52,9 @@ name3 = input()
 print(name3)
 print(name2)
 print(name1)
+
+#Задача 10
+movie = input()
+cinema = input()
+showtime = input()
+print('Билет на "' + movie +'" в "' + cinema + '" на ' + showtime + ' забронирован. ')
