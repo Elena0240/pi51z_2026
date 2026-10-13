@@ -14,3 +14,10 @@ else:
 #Задача 3
 name = input()
 print(name * 4)
+
+#Задача 4
+text = input()
+if "кот" in text:
+    print("МЯУ")
+else:
+    print("ГАВ")
