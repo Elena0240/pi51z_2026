@@ -62,3 +62,26 @@ elif estimation == "3":
     print("Удовлетворительно")
 else:
     print("Неудовлетворительно.")
+
+#Задача 9
+login = input()
+email = input()
+if ("@" in email) and ("@" not in login):
+    print("ОК")
+else:
+    print("ОШИБКА")
+
+#Задача 10
+step1 = input("Ты у входа в пещеру. Зайти? (да/нет): ")
+if step1 == "нет": 
+    print("Ты ушел домой.")
+elif step1 == "да":
+   step2 = input("В пещере темно. Зажечь факел? (да/нет): ")
+   if step2 == "да":
+       print("Ты нашел клад!")
+   else:
+        step3 = input("Ты идешь в темноте. Свернуть направо? (да/нет): ")
+        if step3 == "да":
+            print("Упс, ты упал в яму.")
+        else:
+            print("Упс, ты упал в яму.")
