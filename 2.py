@@ -30,3 +30,12 @@ if text1 == "раз" and text2 == "два" and text3 == "три":
     print("ГОРИ")
 else:
     print("НЕ ГОРИ")
+
+#Задача 6
+text1 = input()
+text2 = input()
+text3 = input()
+if (text1 == "раз" or text1 == "1") and (text2 == "два" or text2 == "2") and (text3 == "три" or text3 == "3"):
+   print("ГОРИ")
+else:
+   print("НЕ ГОРИ") 
