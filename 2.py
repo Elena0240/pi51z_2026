@@ -39,3 +39,15 @@ if (text1 == "раз" or text1 == "1") and (text2 == "два" or text2 == "2") a
    print("ГОРИ")
 else:
    print("НЕ ГОРИ") 
+
+#Задача 7
+answer1 = input("Ты любишь активный отдых? (да/нет): ")
+answer2 = input("Ты любишь узнавать что-то новое? (да/нет): ")
+if answer1 == "да" and answer2 == "да":
+    print("Ты - Путешественник. ")
+elif answer1 == "да" and answer2 == "нет":
+    print("Движение - это жизнь.")
+elif answer1 == "нет" and answer2 == "да":
+    print("Ты очень любознательный!")
+else:
+    print("Ты - любитель поспать.")
