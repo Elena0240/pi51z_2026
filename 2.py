@@ -41,13 +41,24 @@ else:
    print("НЕ ГОРИ") 
 
 #Задача 7
-answer1 = input("Ты любишь активный отдых? (да/нет): ")
-answer2 = input("Ты любишь узнавать что-то новое? (да/нет): ")
+answer1 = input("Ты рано встаешь? (да/нет): ")
+answer2 = input("Ты любишь завтракать? (да/нет): ")
 if answer1 == "да" and answer2 == "да":
-    print("Ты - Путешественник. ")
+    print("Жаворонок-гурман. ")
 elif answer1 == "да" and answer2 == "нет":
-    print("Движение - это жизнь.")
+    print("Жаворонок-торопыжка")
 elif answer1 == "нет" and answer2 == "да":
-    print("Ты очень любознательный!")
+    print("Сова-гурман")
 else:
-    print("Ты - любитель поспать.")
+    print("Сова-соня")
+
+#Задача 8
+estimation = input()
+if estimation == "5":
+    print("Отлично")
+elif estimation == "4":
+    print("Хорошо")
+elif estimation == "3":
+    print("Удовлетворительно")
+else:
+    print("Неудовлетворительно.")
