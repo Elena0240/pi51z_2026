@@ -42,3 +42,33 @@ number2 = int(input())
 number1, number2 = number2, number1
 print(number1)
 print(number2)
+
+#Задача 8
+number =float(input())
+print(abs(number))
+
+#Задача 9
+number1 = int(input())
+number2 = int(input())
+print(number1 // number2)
+print(number1 % number2)
+
+#Задача 10
+number1 = int(input())
+number2 = int(input())
+operation = input()
+if operation == "+":
+ print(number1 + number2)
+elif operation == "-":
+ print(number1 - number2)
+elif operation == "*":
+ print(number1 * number2)
+elif operation == "/":
+   if number2 == 0:
+      print("ОШИБКА")
+   else:
+      print(number1 / number2)
+else:
+   print("ОШИБКА")
+   
+
