@@ -13,3 +13,12 @@ print(number1 + number2)
 #Задача 3
 word = input()
 print("Слово", word, "имеет длину", len(word))
+
+#Задача 4
+number = float(input())
+if number > 0:
+    print("+")
+elif number < 0:
+    print("-")
+else:
+    print("0")
