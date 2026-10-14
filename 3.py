@@ -9,3 +9,7 @@ print(number1 + number2)
 number1 = float(input())
 number2 = float(input())
 print(number1 + number2)
+
+#Задача 3
+word = input()
+print("Слово", word, "имеет длину", len(word))
