@@ -29,9 +29,16 @@ hours_per_day = 24
 minutes_per_hour = 60
 print(days_per_year * hours_per_day * minutes_per_hour)
 
-#Задача 
+#Задача 6
 text = input()
 total_kopecks = len(text) * 40
 rubles = total_kopecks // 100
 kopecks = total_kopecks % 100
 print(rubles, "p.", kopecks, "коп.")
+
+#Задача 7
+number1 = int(input())
+number2 = int(input())
+number1, number2 = number2, number1
+print(number1)
+print(number2)
