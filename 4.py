@@ -14,3 +14,9 @@ while number != 0:
     line += str(number) + " "
     number = int(input())
 print(line)
+
+#Задача 3
+line = input("введите строку: ")
+while line != "":
+    print(line)
+    line = input("введите строку: ")
