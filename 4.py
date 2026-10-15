@@ -41,3 +41,17 @@ elif password != repeat:
     print("Пароли не совпадают!")
 else:
     print("ОК")
+
+#Задача 6
+password = input("Введите пароль: ")
+repeat = input("Повторите пароль: ")
+while len(password) < 8 or password != repeat or "123" in password:
+    if len(password) <8:
+        print("Слишком короткий!")
+    elif password != repeat:
+        print("Пароли не совпадают!")
+    else:
+        print("Пароль содержит 123!")
+    password = input()
+    repeat = input()
+print("OK")
