@@ -31,3 +31,13 @@ while t !=0:
     else:
         print("НОРМАЛЬНО")
     t = float(input("Введите температуру: "))
+
+#Задача 5
+password = input("Введите пароль: ")
+repeat = input("Повторите пароль: ")
+if len(password) < 8:
+    print("Слишком короткий!")
+elif password != repeat:
+    print("Пароли не совпадают!")
+else:
+    print("ОК")
