@@ -55,3 +55,11 @@ while len(password) < 8 or password != repeat or "123" in password:
     password = input()
     repeat = input()
 print("OK")
+
+#Задача 7
+number = int(input("Введите число: "))
+total = 0
+while number != 0:
+    total += number
+    number = int(input("Введите число: "))
+    print(total)
