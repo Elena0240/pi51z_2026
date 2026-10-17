@@ -22,3 +22,9 @@ n = int(input("Введите число для отсчета: "))
 for i in range(n, -1, -1):
     print(i)
 print("Пуск!")
+
+#Задача 5
+n = int(input("Введите число n: "))
+for i in range(n + 1):
+    print("Куб числа", i, "равен", i **3)
+    
