@@ -34,3 +34,11 @@ factorial = 1
 for i in range(1, n + 1):
     factorial *= i
 print(factorial)
+
+#Задача 7
+n = int(input("Сколько чисел вводить? "))
+total = 0
+for i in range(n):
+    number = int(input("Введите число: "))
+    total += number
+print(total)
