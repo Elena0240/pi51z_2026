@@ -51,3 +51,10 @@ for i in range(n):
     if number !=0:
         product *= number
 print(product)
+
+#Задача 9
+n = int(input("Введите число: "))
+for i in range(1, n + 1):
+    if n % i == 0:
+        print(i, end=" ")
+print()
