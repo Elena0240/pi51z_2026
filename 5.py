@@ -27,4 +27,10 @@ print("Пуск!")
 n = int(input("Введите число n: "))
 for i in range(n + 1):
     print("Куб числа", i, "равен", i **3)
-    
+
+#Задача 6
+n = int(input("Введите число для факториала: "))
+factorial = 1
+for i in range(1, n + 1):
+    factorial *= i
+print(factorial)
