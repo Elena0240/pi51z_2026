@@ -36,3 +36,18 @@ while True:
     if ("кот" in text or "Кот" in text) and cat == -1:
         cat = counter 
 print(cat)
+
+#Задача 4
+cat = 0
+index = -1
+counter = 0
+while True:
+    text = input("Введите строку: ")
+    if text == "СТОП":
+        break
+    counter += 1 
+    if "кот" in text or "Кот" in text:
+        cat += 1
+        if index == -1:
+            index = counter
+print(cat, index)
