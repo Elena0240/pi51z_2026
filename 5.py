@@ -16,4 +16,9 @@ text = input("Введите строку: ")
 n = int(input("Сколько раз вывести: "))
 for i in range(1, n + 1):
     print(i, text)
-    
+
+#Задача 4
+n = int(input("Введите число для отсчета: "))
+for i in range(n, -1, -1):
+    print(i)
+print("Пуск!")
