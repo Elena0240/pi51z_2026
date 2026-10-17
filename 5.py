@@ -42,3 +42,12 @@ for i in range(n):
     number = int(input("Введите число: "))
     total += number
 print(total)
+
+#Задача 8
+n = int(input("Сколько чисел выводить? "))
+product = 1
+for i in range(n):
+    number = int(input("Введите число: "))
+    if number !=0:
+        product *= number
+print(product)
