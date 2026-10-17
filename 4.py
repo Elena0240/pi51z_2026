@@ -79,3 +79,14 @@ while number != 0:
     summa += number % 10
     number //= 10
 print(summa)
+
+#Задача 10
+secret = 42
+guess = int(input("Угадайте число: "))
+while guess != secret:
+    if guess > secret:
+        print("БОЛЬШЕ")
+    else:
+        print("МЕНЬШЕ")
+    guess = int(input("Угадайте число: "))
+print("УГАДАЛ")
