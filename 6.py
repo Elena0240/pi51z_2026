@@ -11,3 +11,16 @@ if found:
     print("МЯУ")
 else:
     print("НЕТ")
+
+#Задача 2
+n = int(input("Сколько строк ввести? "))
+found = False
+for i in range(n):
+    text = input("Введите строку: ")
+    if "кот" in text or "Кот" in text: 
+        found = True
+        break
+if found:
+    print("МЯУ")
+else:
+    print("НЕТ")
