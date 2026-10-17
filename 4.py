@@ -72,3 +72,10 @@ while number > 0:
     number //= 10
 print(count)
 
+#Задача 9
+number = int(input("Введите число: "))
+summa = 0
+while number != 0:
+    summa += number % 10
+    number //= 10
+print(summa)
