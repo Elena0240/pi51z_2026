@@ -24,3 +24,15 @@ if found:
     print("МЯУ")
 else:
     print("НЕТ")
+
+#Задача 3
+cat = -1
+counter = 0
+while True:
+    text = input("Введите строку (или СТОП): ")
+    if text == "СТОП":
+        break
+    counter += 1
+    if ("кот" in text or "Кот" in text) and cat == -1:
+        cat = counter 
+print(cat)
