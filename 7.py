@@ -68,3 +68,20 @@ if len(only_one) > 0:
     print("Ученики, изучающие только один язык:", len(only_one))
 else:
     print("NO")
+
+#Задача 5
+m = int(input("Сколько книг в библиотеке? "))
+books = set()
+
+for i in range(m):
+    name = input("Название книги: ")
+    books.add(name)
+
+n = int(input("Сколько книг в списке? "))
+
+for i in range(n):
+    name = input("Какая книга нужна? ")
+    if name in books:
+        print("YES")
+    else:
+        print("NO")
