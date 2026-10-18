@@ -102,3 +102,31 @@ if cat:
     print("МЯУ")
 else:
     print("НЕТ")
+
+#Задача 9
+n = int(input("Сколько чисел ввести? "))
+total = 0
+for i in range(n):
+    number = int(input("Введите число: "))
+    if number <= 0:
+        continue
+    total += number
+print(total)
+
+#Задача 10
+total = 0
+count = 0
+stopp= False
+while True:
+    number = int(input("Введите число: "))
+    if number == 0:
+        break
+    count += 1
+    total += number
+    if total > 100:
+        stopp = True
+        break
+if stopp:
+    print("СТОП", count)
+else:
+    print("ОК")
