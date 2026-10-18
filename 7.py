@@ -101,3 +101,15 @@ for i in range(m):
         all_students = all_students & lesson_students
 for name in all_students:
     print(name)
+
+#Задача 7
+n = int(input("Сколько всего сотрудников? "))
+names = set()
+duplicates = set()
+for i in range(n):
+    name = input("Введите фамилию: ")
+    if name in names:
+        duplicates.add(name)
+    else:
+        names.add(name)
+print("Количество однофамильцев:", len(duplicates))
