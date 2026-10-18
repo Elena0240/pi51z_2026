@@ -85,3 +85,19 @@ for i in range(n):
         print("YES")
     else:
         print("NO")
+
+#Задача 6
+m = int(input("Сколько было уроков? "))
+all_students = set()
+for i in range(m):
+    k = int(input("Сколько учеников на уроке? "))
+    lesson_students = set()
+    for j in range(k):
+        name = input("Введите фамилию: ")
+        lesson_students.add(name)   
+    if i == 0:
+        all_students = lesson_students
+    else:
+        all_students = all_students & lesson_students
+for name in all_students:
+    print(name)
