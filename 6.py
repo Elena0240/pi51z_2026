@@ -79,3 +79,11 @@ while True:
     if total >= 10 and result == -1:
         result = count -1
 print(result)
+
+#Задача 7
+n = int(input("Сколько строк вводить? "))
+for i in range(n):
+    text = input("Введите строку: ")
+    if "плохо" in text:
+        continue
+    print(text)
