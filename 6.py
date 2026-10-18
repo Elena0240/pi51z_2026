@@ -87,3 +87,18 @@ for i in range(n):
     if "плохо" in text:
         continue
     print(text)
+
+#Задача 8
+cat = False
+while True:
+    text = input("Введите строку (или СТОП): ")
+    if text == "СТОП":
+        break
+    if "пёс" in text or "Пёс" in text:
+        cat = False
+    elif "кот" in text or "Кот" in text:
+        cat = True
+if cat:
+    print("МЯУ")
+else:
+    print("НЕТ")
