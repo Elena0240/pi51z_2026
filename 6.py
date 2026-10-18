@@ -65,3 +65,17 @@ for i in range(a, b + 1):
     else:
         print(i, end=" ")
 print()
+
+#Задача 6
+total = 0
+count = 0
+result = -1
+while True:
+    number = int(input("Введите число (0 для выхода): "))
+    if number == 0:
+        break
+    total += number
+    count += 1
+    if total >= 10 and result == -1:
+        result = count -1
+print(result)
