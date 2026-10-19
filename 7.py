@@ -127,3 +127,23 @@ for i in range(n):
     ingredients = set(ingredients_line.split())
     if ingredients <= fridge:
         print(recipe_name)
+
+#Задача 9
+# Задача 9
+m = int(input("Сколько всего доступных блюд? "))
+all_dishes = set()
+for i in range(m):
+    dish = input("Введите название блюда: ")
+    all_dishes.add(dish)
+n = int(input("Сколько было дней? "))
+cooked_dishes = set()
+for i in range(n):
+    day_dishes = input("Что готовили в этот день (через пробел)? ")
+    for dish in day_dishes.split():
+        cooked_dishes.add(dish)
+result = all_dishes - cooked_dishes
+if len(result) > 0:
+    for dish in result:
+        print(dish)
+else:
+    print("EMPTY")
