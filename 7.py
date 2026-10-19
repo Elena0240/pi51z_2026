@@ -129,7 +129,6 @@ for i in range(n):
         print(recipe_name)
 
 #Задача 9
-# Задача 9
 m = int(input("Сколько всего доступных блюд? "))
 all_dishes = set()
 for i in range(m):
@@ -145,5 +144,22 @@ result = all_dishes - cooked_dishes
 if len(result) > 0:
     for dish in result:
         print(dish)
+else:
+    print("EMPTY")
+
+#Задача 10
+line1 = input("Введите числа первого множества: ")
+line2 = input("Введите числа второго множества: ")
+numbers1 = set()
+numbers2 = set()
+for num in line1.split():
+    numbers1.add(num)
+for num in line2.split():
+    numbers2.add(num)
+result = numbers1 ^ numbers2
+if len(result) > 0:
+    for num in result:
+        print(num, end=" ")
+    print()
 else:
     print("EMPTY")
