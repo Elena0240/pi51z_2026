@@ -113,3 +113,17 @@ for i in range(n):
     else:
         names.add(name)
 print("Количество однофамильцев:", len(duplicates))
+
+#Задача 8
+m = int(input("Сколько продуктов в холодильнике? "))
+fridge = set()
+for i in range(m):
+    product = input("Введите продукт: ")
+    fridge.add(product)
+n = int(input("Сколько всего рецептов? "))
+for i in range(n):
+    recipe_name = input("Название рецепта: ")
+    ingredients_line = input("Ингредиенты через пробел: ")
+    ingredients = set(ingredients_line.split())
+    if ingredients <= fridge:
+        print(recipe_name)
