@@ -83,3 +83,13 @@ for i in string:
     else:
         result = result + i
 print(result)
+
+#Часть 2: Срезы
+
+#Задача 11
+string = input("Введите строку: ")
+print(string[::-1])
+
+#Задача 12
+string = input("Введите строку: ")
+print(string[:3], s[-3:])
