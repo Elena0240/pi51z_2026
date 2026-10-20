@@ -69,3 +69,14 @@ total = 0
 for i in range(p, q + 1):
     total = total + nums[i]
 print(total)
+
+#Задача 7
+n = int(input("Сколько строк? "))
+lines = []
+for i in range(n):
+    lines.append(input("Строка: "))
+w1 = input("Первое слово: ")
+w2 = input("Второе слово: ")
+for s in lines:
+    if w1 in s and w2 in s:
+        print(s)
