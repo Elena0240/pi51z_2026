@@ -112,3 +112,10 @@ if len(s) > n:
     print(s[:n - 3] + "...")
 else:
     print(s)
+
+#Задача 16
+string = input("Введите строку: ")
+if string == string[::-1]:
+    print("ДА")
+else:
+    print("НЕТ")
