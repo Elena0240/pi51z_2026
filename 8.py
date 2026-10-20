@@ -18,3 +18,11 @@ else:
 #Задача 3
 word = input("Введите слово: ")
 print(word[-1])
+
+#3адача 4
+word1 = input("Первое слово: ")
+word2 = input("Второе слово: ")
+if word1[-1] == word2[0]:
+    print("ВЕРНО")
+else:
+    print("НЕВЕРНО")
