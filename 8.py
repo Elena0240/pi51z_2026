@@ -100,3 +100,7 @@ if string[:2] == "Не" or string[:2] == "не":
     print(string[2:])
 else:
     print(string)
+
+#Задача 14
+string = input("Введите строку: ")
+print(string[::2])
