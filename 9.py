@@ -86,3 +86,21 @@ n = int(input("Сколько дней? "))
 soups = ["щи", "борщ", "щавелевый", "овсяный", "по-чабански"]
 for i in range(n):
     print(soups[i % 5])
+
+#Задача 9
+white = []
+while True:
+    s = input("Белый список (Enter — конец): ")
+    if s == "":
+        break
+    white.append(s)
+queries = []
+while True:
+    s = input("Запрос (Enter — конец): ")
+    if s == "":
+        break
+    queries.append(s)
+
+for q in queries:
+    if q in white:
+        print(q)
