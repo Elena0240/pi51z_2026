@@ -39,3 +39,10 @@ if n < 1 or n > len(word):
     print("ОШИБКА")
 else:
     print(word[n - 1])
+
+#Задача 7
+s = input("Введите строку: ")
+codes = []
+for ch in s:
+    codes.append(str(ord(ch)))
+print(", ".join(codes))
