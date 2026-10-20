@@ -125,10 +125,23 @@ word1 = input("Первое слово: ")
 word2 = input("Второе слово: ")
 bulls = 0
 cows = 0
-for i in range(len(w1)):
+for i in range(len(word1)):
     if word1[i] == word2[i]:
         bulls = bulls + 1
     elif word1[i] in word2:
         cows = cows + 1
 print("Быки:", bulls)
 print("Коровы:", cows)
+
+#Задача 18
+s = input("Введите строку: ")
+max_len = 1
+cur_len = 1
+for i in range(1, len(s)):
+    if s[i] == s[i - 1]:
+        cur_len = cur_len + 1
+        if cur_len > max_len:
+            max_len = cur_len
+    else:
+        cur_len = 1
+print(max_len)
