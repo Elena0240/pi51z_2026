@@ -119,3 +119,16 @@ if string == string[::-1]:
     print("ДА")
 else:
     print("НЕТ")
+
+#Задача 17
+word1 = input("Первое слово: ")
+word2 = input("Второе слово: ")
+bulls = 0
+cows = 0
+for i in range(len(w1)):
+    if word1[i] == word2[i]:
+        bulls = bulls + 1
+    elif word1[i] in word2:
+        cows = cows + 1
+print("Быки:", bulls)
+print("Коровы:", cows)
