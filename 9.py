@@ -104,3 +104,17 @@ while True:
 for q in queries:
     if q in white:
         print(q)
+
+#Задача 10
+n = int(input("Введите количество строк: "))
+result = [""] * n
+for i in range(n):
+    line = input("Введите позицию и букву через пробел: ")
+    parts = line.split()
+    pos = int(parts[0])
+    letter = parts[1]
+    result[pos - 1] = letter
+word = ""
+for i in range(len(result)):
+    word = word + result[i]
+print("Полученное слово:", word)
