@@ -44,3 +44,16 @@ for i in range(n):
     words.append(input("Строка: "))
 for i in range(n - 1, -1, -1):
     print(words[i])
+
+#Задача 5
+n = int(input("Сколько чисел? "))
+nums = []
+for i in range(n):
+    nums.append(int(input("Число: ")))
+out = ""
+for x in nums:
+    if out == "":
+        out = str(x * 3)
+    else:
+        out = out + " " + str(x * 3)
+print(out)
