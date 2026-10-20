@@ -104,3 +104,11 @@ else:
 #Задача 14
 string = input("Введите строку: ")
 print(string[::2])
+
+#Задача 15
+n = int(input("Максимальная длина: "))
+s = input("Введите строку: ")
+if len(s) > n:
+    print(s[:n - 3] + "...")
+else:
+    print(s)
