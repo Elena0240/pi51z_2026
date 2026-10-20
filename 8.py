@@ -42,7 +42,31 @@ else:
 
 #Задача 7
 s = input("Введите строку: ")
-codes = []
+result = ""
 for ch in s:
-    codes.append(str(ord(ch)))
-print(", ".join(codes))
+    if result == "":
+        result = str(ord(ch))
+    else:
+        result = result + ", " + str(ord(ch))
+print(result)
+
+#Задача 8
+
+word = input("Слово: ")
+prev = word
+while True:
+    word = input("Следующее слово: ")
+    if word[0] != prev[-1]:
+        print(word)
+        break
+    prev = word
+
+#Задача 9
+string = input("Введите строку: ")
+vowels = "аеёиоуыэюя"
+count = 0
+for i in string:
+    if i in vowels:
+        count = count + 1
+print(count)
+
