@@ -31,3 +31,11 @@ else:
 word = input("Введите слово: ")
 for letter in word:
     print(letter)
+
+#Задача 6
+word = input("Введите слово: ")
+n = int(input("Введите номер буквы: "))
+if n < 1 or n > len(word):
+    print("ОШИБКА")
+else:
+    print(word[n - 1])
