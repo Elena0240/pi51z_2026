@@ -145,3 +145,25 @@ for i in range(1, len(s)):
     else:
         cur_len = 1
 print(max_len)
+
+#Задача 19
+n = int(input("Количество строк: "))
+for i in range(n):
+    s = input("Строка: ")
+    if s[:2] == "%%":
+        print(s[2:])
+    elif s[:4] == "####":
+        continue
+    else:
+        print(s)
+#Задача 20
+name = input("Введите имя пользователя: ")
+allowed = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_"
+ok = True
+for ch in name:
+    if ch not in allowed:
+        print("Неверный символ:", ch)
+        ok = False
+        break
+if ok:
+    print("OK")
