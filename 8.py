@@ -70,3 +70,16 @@ for i in string:
         count = count + 1
 print(count)
 
+#Задача 10
+alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+step = int(input("Шаг сдвига: "))
+string = input("Введите строку: ")
+result = ""
+for i in string:
+    if i in alphabet:
+        pos = alphabet.find(i)
+        new_pos = (pos + step) % 33
+        result = result + alphabet[new_pos]
+    else:
+        result = result + i
+print(result)
