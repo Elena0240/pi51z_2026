@@ -36,3 +36,11 @@ for i in range(n - 1):
     else:
         out = out + " " + str(s)
 print(out)
+
+#Задача 4
+n = int(input("Сколько строк? "))
+words = []
+for i in range(n):
+    words.append(input("Строка: "))
+for i in range(n - 1, -1, -1):
+    print(words[i])
