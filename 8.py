@@ -26,3 +26,8 @@ if word1[-1] == word2[0]:
     print("ВЕРНО")
 else:
     print("НЕВЕРНО")
+
+#Задача 5
+word = input("Введите слово: ")
+for letter in word:
+    print(letter)
