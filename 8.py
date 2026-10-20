@@ -93,3 +93,10 @@ print(string[::-1])
 #Задача 12
 string = input("Введите строку: ")
 print(string[:3], s[-3:])
+
+#Задача 13
+string = input("Введите строку: ")
+if string[:2] == "Не" or string[:2] == "не":
+    print(string[2:])
+else:
+    print(string)
