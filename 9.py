@@ -57,3 +57,15 @@ for x in nums:
     else:
         out = out + " " + str(x * 3)
 print(out)
+
+#Задача 6
+n = int(input("Сколько чисел? "))
+nums = []
+for i in range(n):
+    nums.append(int(input("Число: ")))
+p = int(input("Начальный индекс p: "))
+q = int(input("Конечный индекс q: "))
+total = 0
+for i in range(p, q + 1):
+    total = total + nums[i]
+print(total)
