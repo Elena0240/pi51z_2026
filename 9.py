@@ -80,3 +80,9 @@ w2 = input("Второе слово: ")
 for s in lines:
     if w1 in s and w2 in s:
         print(s)
+
+#Задача 8
+n = int(input("Сколько дней? "))
+soups = ["щи", "борщ", "щавелевый", "овсяный", "по-чабански"]
+for i in range(n):
+    print(soups[i % 5])
