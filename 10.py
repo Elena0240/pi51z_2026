@@ -17,3 +17,20 @@ if found:
     print("ДА")
 else:
     print("НЕТ")
+
+#Задача 2
+n = int(input("Сколько пар? "))
+pairs = []
+for i in range(n):
+    line = input("Фамилия и оценка: ")
+    pos = line.find(" ")
+    surname = line[:pos]
+    mark = int(line[pos+1:])
+    pairs.append((surname, mark))
+for p in pairs:
+    print(p[0], p[1])
+print()
+for p in pairs:
+    if p[1] == 4 or p[1] == 5:
+        print(p[0], p[1])
+
