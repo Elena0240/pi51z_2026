@@ -36,3 +36,7 @@ while True:
     if "лук" not in line.split():
         lines.append(line)
 print(", ".join(lines))
+
+#Задача 7
+text = input("Введите строку: ")
+print("\n".join(text.split()))
