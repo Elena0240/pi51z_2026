@@ -64,3 +64,14 @@ b = 1
 for i in range(n):
     print(a)
     a, b = b, a + b
+
+#Задача 6
+n = int(input("Сколько чисел? "))
+nums = []
+for i in range(n):
+    nums.append(int(input("Число: ")))
+for i in range(n - 1):
+    for j in range(n - 1 - i):
+        if nums[j] > nums[j + 1]:
+            nums[j], nums[j + 1] = nums[j + 1], nums[j]
+print(nums)
