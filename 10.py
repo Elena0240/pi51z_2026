@@ -110,3 +110,15 @@ for i in range(n - 1):
             people[j], people[j+1] = people[j+1], people[j]
 for p in people:
     print(p[0], p[1])
+
+#Задача 10
+n = int(input("Сколько строк? "))
+words = []
+for i in range(n):
+    word = input("Введите строку: ")
+    words.append(word)
+tuples = []
+for w in words:
+    tuples.append((len(w), w))
+for t in tuples:
+    print(t)
