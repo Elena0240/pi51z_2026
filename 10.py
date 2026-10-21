@@ -75,3 +75,11 @@ for i in range(n - 1):
         if nums[j] > nums[j + 1]:
             nums[j], nums[j + 1] = nums[j + 1], nums[j]
 print(nums)
+
+#Задача 7
+n = int(input("Сколько чисел? "))
+nums = []
+for i in range(n):
+    nums.append(int(input("Число: ")))
+unique_nums = set(nums)
+print(len(unique_nums))
