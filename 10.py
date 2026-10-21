@@ -34,3 +34,13 @@ for p in pairs:
     if p[1] == 4 or p[1] == 5:
         print(p[0], p[1])
 
+#Задача 3
+n = int(input("Сколько строк? "))
+
+words = []
+for i in range(n):
+    word = input("Введите строку: ")
+    words.append(word)
+for w in sorted(words):
+    print(w)
+
