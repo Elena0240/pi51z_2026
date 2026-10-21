@@ -40,3 +40,11 @@ print(", ".join(lines))
 #Задача 7
 text = input("Введите строку: ")
 print("\n".join(text.split()))
+
+#Задача 8
+url = input("Введите URL: ")
+params = url.split("?")[1].split("&")
+for p in params:
+    if p.startswith("q="):
+        print(p.split("=")[1])
+        break
