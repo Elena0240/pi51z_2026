@@ -26,3 +26,13 @@ print(" ".join([str(r) for r in result]))
 line = input("Введите строки через пробел: ")
 words = line.split()
 print("[" + ", ".join(['"' + w + '"' for w in words]) + "]")
+
+#Задача 6
+lines = []
+while True:
+    line = input("Строка рецепта (Enter — конец): ")
+    if line == "":
+        break
+    if "лук" not in line.split():
+        lines.append(line)
+print(", ".join(lines))
