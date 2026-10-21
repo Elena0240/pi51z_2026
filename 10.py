@@ -52,10 +52,15 @@ for i in range(n):
     words.append(word)
 for i in range(n - 1):
     for j in range(n - 1 - i):
-        # Сравниваем кортежи: сначала длина, потом сама строка
         if (len(words[j]), words[j]) > (len(words[j+1]), words[j+1]):
-            # Меняем местами через кортежное присваивание
             words[j], words[j+1] = words[j+1], words[j]
 for w in words:
     print(w)
 
+#Задача 5
+n = int(input("Сколько чисел Фибоначчи вывести? "))
+a = 1
+b = 1
+for i in range(n):
+    print(a)
+    a, b = b, a + b
