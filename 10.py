@@ -44,3 +44,18 @@ for i in range(n):
 for w in sorted(words):
     print(w)
 
+#Задача 4
+n = int(input("Сколько строк? "))
+words = []
+for i in range(n):
+    word = input("Введите строку: ")
+    words.append(word)
+for i in range(n - 1):
+    for j in range(n - 1 - i):
+        # Сравниваем кортежи: сначала длина, потом сама строка
+        if (len(words[j]), words[j]) > (len(words[j+1]), words[j+1]):
+            # Меняем местами через кортежное присваивание
+            words[j], words[j+1] = words[j+1], words[j]
+for w in words:
+    print(w)
+
