@@ -83,3 +83,14 @@ for i in range(n):
     nums.append(int(input("Число: ")))
 unique_nums = set(nums)
 print(len(unique_nums))
+
+#Задача 8
+n = int(input("Сколько пар чисел? "))
+for i in range(n):
+    line = input("Введите пару чисел: ")
+    pos = line.find(" ")
+    a = int(line[:pos])
+    b = int(line[pos+1:])
+    if a > b:
+        a, b = b, a
+    print(a, b)
