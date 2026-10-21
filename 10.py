@@ -94,3 +94,19 @@ for i in range(n):
     if a > b:
         a, b = b, a
     print(a, b)
+
+#Задача 9
+n = int(input("Сколько человек? "))
+people = []
+for i in range(n):
+    line = input("Фамилия и рост: ")
+    pos = line.find(" ")
+    surname = line[:pos]
+    height = int(line[pos+1:])
+    people.append((surname, height))
+for i in range(n - 1):
+    for j in range(n - 1 - i):
+        if people[j][1] < people[j+1][1]:
+            people[j], people[j+1] = people[j+1], people[j]
+for p in people:
+    print(p[0], p[1])
